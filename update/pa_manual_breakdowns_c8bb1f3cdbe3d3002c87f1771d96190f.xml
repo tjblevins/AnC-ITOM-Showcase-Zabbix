@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="pa_manual_breakdowns">
+    <pa_manual_breakdowns action="INSERT_OR_UPDATE">
+        <breakdown display_value="CMDB Class Manual">8a35ec16f3011200eaae19d854612b65</breakdown>
+        <order>100</order>
+        <sys_class_name>pa_manual_breakdowns</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-24 22:00:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c8bb1f3cdbe3d3002c87f1771d96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cmdb_ci_qualifier_traffic_based_connecti</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Zabbix Management" source="x_snc_zabbix_manag">509892badb1bdf002c87f1771d9619e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zabbix Management">509892badb1bdf002c87f1771d9619e6</sys_scope>
+        <sys_update_name>pa_manual_breakdowns_c8bb1f3cdbe3d3002c87f1771d96190f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-24 22:00:01</sys_updated_on>
+        <value>cmdb_ci_qualifier_traffic_based_connecti</value>
+    </pa_manual_breakdowns>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_rest_message_fn_headers">
+    <sys_rest_message_fn_headers action="INSERT_OR_UPDATE">
+        <name>Content-Type</name>
+        <rest_message_function display_value="Get HOST Info">129fdab4dbef9300786ff1351d9619ba</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_headers</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-24 17:40:41</sys_created_on>
+        <sys_id>b29fdab4dbef9300786ff1351d9619bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Content-Type</sys_name>
+        <sys_package display_value="Zabbix Management" source="x_snc_zabbix_manag">509892badb1bdf002c87f1771d9619e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zabbix Management">509892badb1bdf002c87f1771d9619e6</sys_scope>
+        <sys_update_name>sys_rest_message_fn_headers_b29fdab4dbef9300786ff1351d9619bf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-24 17:40:41</sys_updated_on>
+        <value>application/json</value>
+    </sys_rest_message_fn_headers>
+</record_update>
