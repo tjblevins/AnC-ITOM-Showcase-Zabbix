@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_element_activity">
+    <wf_element_activity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <attributes/>
+        <base_provider display_value="REST Web Service">8817a25e37222100aa40cc9fbe41f106</base_provider>
+        <category/>
+        <checked_out_by/>
+        <default_height/>
+        <default_width/>
+        <description>Pulls and Authetication Token from Zabbix</description>
+        <image>images/heisenberg_icons/workflow_ie8/provider_rest.png</image>
+        <input_meta>{"name":"Input","type":"DATA_OBJECT","properties":[{"name":"zabbix","type":"STRING","mandatory":false},{"name":"user","type":"STRING","mandatory":false},{"name":"pass","type":"STRING","mandatory":false}]}</input_meta>
+        <input_process_script/>
+        <input_transform>{"web_service_message":"655d5e34dbef9300786ff1351d9619a5","web_service_message_function":"c2ed1674dbef9300786ff1351d9619a9","web_service_endpoint":"","parameters":"[{\"name\":\"ZabbixIPAddress\",\"value\":\"${activityInput.zabbix}\",\"additional_attribute\":\"\"},{\"name\":\"user\",\"value\":\"${activityInput.user}\",\"additional_attribute\":\"\"},{\"name\":\"pass\",\"value\":\"${activityInput.pass}\",\"additional_attribute\":\"\"}]","headers":"[]","queryParameters":"[]","midCapabilities":"18409d8007482000dada43c0d1021e8f","use_mid_server":"true","time_out":"60","auth_type":"use_existing_credentials","credentials":"","protocol_profile":"","oauth_entity_profile":""}</input_transform>
+        <local_variables>{"name":"Local","type":"DATA_OBJECT","properties":[{"name":"Local2","type":"STRING"}]}</local_variables>
+        <name>Get Auth ID</name>
+        <output_meta>{"name":"Output","type":"DATA_OBJECT","properties":[{"name":"result","type":"STRING"}]}</output_meta>
+        <output_process_script/>
+        <output_transform>[{"toLink":"activityOutput.result","description":"Results","to":"result","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.body","from":"${executionResult.body}","fromSource":"executionResult","type":"JSON","children":"[]","translation":"$.result"},{"toLink":"activityLocal.error","description":"Error","to":"error","toType":"string","toDestination":"activityLocal","sourceLabel":"executionResult.error","from":"${executionResult.error}","fromSource":"executionResult","type":"JSON","children":"[]","translation":"$"}]</output_transform>
+        <processing_script/>
+        <sample_payloads>{"executionResult.status_code":{"payload":200,"type":"direct"},"executionResult.header":{"payload":"{\"Server\":\"Apache/2.4.6 (Red Hat Enterprise Linux) PHP/5.4.16\",\"Access-Control-Allow-Origin\":\"*\",\"Access-Control-Allow-Methods\":\"POST\",\"Access-Control-Max-Age\":\"1000\",\"Content-Length\":\"68\",\"Date\":\"Thu, 26 Jul 2018 11:23:32 GMT\",\"Access-Control-Allow-Headers\":\"Content-Type\",\"X-Powered-By\":\"PHP/5.4.16\",\"Content-Type\":\"application/json\"}","type":"direct"},"executionResult.body":{"payload":"{\"jsonrpc\":\"2.0\",\"result\":\"d90d34041e74b06b63d3eb5409c58c4a\",\"id\":1}","type":"json"},"executionResult.error":{"payload":"null","type":"json"}}</sample_payloads>
+        <short_description>Pulls and Authetication Token from Zabbix</short_description>
+        <style/>
+        <sys_class_name>wf_element_activity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-26 11:57:58</sys_created_on>
+        <sys_id>5c156351db6f17002c87f1771d961940</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Get Auth ID</sys_name>
+        <sys_package display_value="Zabbix Management" source="x_snc_zabbix_manag">509892badb1bdf002c87f1771d9619e6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zabbix Management">509892badb1bdf002c87f1771d9619e6</sys_scope>
+        <sys_update_name>wf_element_activity_5c156351db6f17002c87f1771d961940</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-26 12:00:30</sys_updated_on>
+        <version_container_id>f65c5799db2f17002c87f1771d961956</version_container_id>
+    </wf_element_activity>
+    <sys_translated_text action="delete_multiple" query="documentkey=5c156351db6f17002c87f1771d961940"/>
+    <wf_versionable action="INSERT_OR_UPDATE">
+        <checked_out/>
+        <checked_out_by/>
+        <published>false</published>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-26 11:57:58</sys_created_on>
+        <sys_id>d8156351db6f17002c87f1771d961941</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-26 12:00:30</sys_updated_on>
+        <valid_from>2018-07-26 11:58:22</valid_from>
+        <valid_to/>
+        <version>2</version>
+        <version_container_id>f65c5799db2f17002c87f1771d961956</version_container_id>
+        <wf_element_definition display_value="Get Auth ID">5c156351db6f17002c87f1771d961940</wf_element_definition>
+    </wf_versionable>
+    <wf_versionable action="update_multiple" query="version_container_id=f65c5799db2f17002c87f1771d961956^sys_id!=d8156351db6f17002c87f1771d961941^version&lt;2">
+        <published>false</published>
+    </wf_versionable>
+    <wf_activity action="update_multiple" is_dot_walk_query="true" query="workflow_version.published=true^activity_definition.version_container_id=f65c5799db2f17002c87f1771d961956">
+        <new_activity_definition>5c156351db6f17002c87f1771d961940</new_activity_definition>
+        <out_of_date>true</out_of_date>
+        <notes>There is a newer version of this activity.
+
+To update the activity, check out the workflow, select the activity, right click
+and select 'Update activity' to use the latest version, then publish the workflow</notes>
+    </wf_activity>
+</record_update>
